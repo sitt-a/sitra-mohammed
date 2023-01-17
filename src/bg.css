@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(236, 231, 231);
+  background-color: #191919;
+}
+header{
+  height: 40px ;
+  background: rgb(10, 10, 10);
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+h1{
+  padding-top: 9px;
+  font-size: 15px;
+}
+ul{padding-top: 6px;
+  display: flex;
+  list-style-type: none;
+}
+ul li a{
+  padding:0 10px ;
+  text-decoration:none ;
+  color:#e6e8eb;
+  display: inline-block;
+  font-size: 9px;
+}
+li a::after{
+  content: '' ;
+  display:block ;
+  height:4x ;
+  width: 0;
+  background: rgb(184, 37, 37);
+  transition: all 0.5;
+}
+li a:hover{
+  color: rgb(12, 12, 12);
+  background-color: goldenrod;
+}
+li a:active{
+  color: rgb(12, 12, 12);
+  background-color: goldenrod;}
+
+.container{
+    width:100%;
+  }
+.container .row{
+    width: 80%;
+    margin: auto;
+  }
+.container .row  .header{
+    width:60% ;
+    text-align: center;
+    margin:auto;
+} 
+
+.container .row  .header p{
+    margin-top:15px ;
+    font-size:18px ;
+    line-height: 1.5;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.container .card  {
+    flex: 1;
+    margin: 25px 15px;
+    background-color: rgb(44, 44, 44);
+}
+.container .card img{
+    width: 100%;
+    height: auto;
+}
+.container .card h4{
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: 11px;
+}
+.container .card p{
+    font-size: 10px;
+    padding: 10px;
+    line-height: 1.5;
+}
+.card p{
+  font-size: 2rem;
+}
+.card h4,.card p{
+    font-size: 3vh;}
+@media screen and (max-width:600px){
+ .content{
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+ .card{
+    width: 200px;
+    height: 200px;
+ }
+
+}

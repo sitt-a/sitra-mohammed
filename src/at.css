@@ -1,0 +1,149 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about{
+    width:100% ;
+    height: 100vh;
+    background-color:#161922;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.about .content video{
+    height: auto;
+    width:600px ;
+    max-width:100% ;
+}
+.text{
+    width:550px ;
+    max-width:100% ;
+    padding: 0 10px;
+}
+.content{
+    width: 1280px; ;
+    max-width: 95%;
+    margin:0 auto ;
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: space-around;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(236, 231, 231);
+    background-color: rgb(27, 27, 27);
+  }
+  .hed{
+    height: 80px ;
+    background: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
+  h1.logo{
+    padding-top: 16px;
+    
+  }
+  ul.menu{
+    padding-top: 25px;
+    display: flex;
+    list-style-type: none;
+  }
+  ul.menu li a{
+    padding:0 20px ;
+    text-decoration:none ;
+    color:#e6e8eb;
+    display: inline-block;
+    font-size: large;
+  }
+ .menu li a::after{
+    content: '' ;
+    display:block ;
+    height:4x ;
+    width: 0;
+    background: rgb(184, 37, 37);
+    transition: all 0.5;
+  }
+  .menu li a:hover{
+    color: rgb(12, 12, 12);
+    background-color: goldenrod;
+  }
+ .menu li a:active{
+    color: rgb(12, 12, 12);
+    background-color: goldenrod;}
+  
+
+iframe,video{
+    display: block;
+    margin: 0px auto;
+    width: 50%;
+    height: calc(.4580*80vw);
+}
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.content h2{
+    color: goldenrod;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+ .content{
+  
+  flex-wrap: wrap;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.text{
+  align-items: right;
+  flex-wrap: wrap;
+  padding-top: 0px;
+
+}
+.text ul li{
+    list-style: none;
+    padding-left: 30px;
+}
+.text ul li{
+    font-size:2.8vh;
+}
+video{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+h2{
+    font-size: 4.5vh;
+}
+.text h2{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    color: goldenrod;
+}
+@media(max-width:1000px){
+    
+    .text {
+        order: 1;
+        padding-left: 65px;
+    }
+  .about{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .content{
+    padding-left: 45px;
+  }
+    
+}
