@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="b.css">
+</head>
+<body>
+  <script src="script.js"></script>
+    <header>
+       
+        <h1 class="logo">Habbu</h1>
+        
+        <nav  class="wraper">
+           <ul class="menu">
+               <li><a href="index.html"> Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="addtocart.html">Shop</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="abt.html">Review</a></li> 
+               <li><a href="contact.html"> Contact</a></li>
+           </ul>
+        </nav>
+       
+    </header>
+    <section class="contact">
+     <div class="contact-form">
+        <h1>Contact<span>Us</span></h1>
+     <form>
+      <div class="input-group">
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name" placeholder="your full name" onkeyup="validateName()" ><br>
+         <span id="name-error"></span></div>
+      <div class="input-group" >
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="Email" placeholder="your Email" onkeyup="validateEmail()"  >
+        <span id="email-error"></span></div>
+      <div  class="input-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="10" cols="30" placeholder="your message" onkeyup="validateMessage()"  >
+    
+        </textarea>
+        <span id="message-error"></span></div>
+      <div class="input-group" >
+        <input type="submit" name="" value="submit" class="btn" onclick="return validateForm()">
+        <span id="submit-error"></span></div>
+      </form>
+    </div>
+      <aside class="contact-img">
+        <img src="images/map1.png" alt="map of our location"></img>
+      </aside> 
+     
+    </section>
+
+   
+    <footer>
+      <div class="ma">
+        <span>Habbu</span>
+        <a href="#">privacy policy</a>
+        sitramohammed75@gamil.com
+        +251-937-082-875
+      </div>
+    </footer>
+</body>
+</html>
